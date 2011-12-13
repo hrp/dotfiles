@@ -166,7 +166,7 @@ if executable("ack")
 endif
 
 " Color scheme
-" colorscheme vividchalk
+colorscheme vividchalk
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -213,3 +213,8 @@ inoremap kj <Esc>
 nnoremap <F12> :set invpaste paste?<CR>
 set pastetoggle=<F12>
 set showmode
+
+" Set up toggles 
+
+" Let scripts autoinstall
+let g:GetLastestVimScripts_allowautoinstall=1
