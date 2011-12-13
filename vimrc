@@ -229,7 +229,7 @@ let g:NERDTreeWinPos = 'right'
 let g:EnhCommentifyRespectIndent = 'Yes'
 let g:EnhCommentifyPretty = 'Yes'
 let g:EngCommentifyMultiPartBlocks = 'Yes'
-let g:EnhCommentifyUseBlockIndex = 'Yes'
+let g:EnhCommentifyUseBlockIndex = 'Yes'˝˝
 
 " Let scripts autoinstall
 let g:GetLastestVimScripts_allowautoinstall=1
