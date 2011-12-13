@@ -24,15 +24,15 @@ ZSH_THEME="robbyrussell"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails)
+plugins=(git osx ruby rails)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-. ~/.zsh/config
-. ~/.zsh/aliases
-. ~/.zsh/completion
+# . ~/.zsh/config
+# . ~/.zsh/aliases
+# . ~/.zsh/completion
 
 # use .localrc for settings specific to one system
-[[ -f ~/.localrc ]] && . ~/.localrc
+# [[ -f ~/.localrc ]] && . ~/.localrc
