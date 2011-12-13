@@ -104,7 +104,7 @@ map <Leader>R :e doc/README_FOR_APP<CR>
 
 " Leader shortcuts for Rails commands
 map <Leader>m :Rmodel 
-map <Leader>c :Rcontroller 
+" map <Leader>c :Rcontroller 
 map <Leader>v :Rview 
 map <Leader>u :Runittest 
 map <Leader>f :Rfunctionaltest 
@@ -174,7 +174,8 @@ if executable("ack")
 endif
 
 " Color scheme
-colorscheme vividchalk
+colorscheme jellybeans
+set t_Co=256
 " highlight NonText guibg=#060606
 " highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
@@ -236,7 +237,7 @@ let g:NERDTreeWinPos = 'right'
 let g:EnhCommentifyRespectIndent = 'Yes'
 let g:EnhCommentifyPretty = 'Yes'
 let g:EngCommentifyMultiPartBlocks = 'Yes'
-let g:EnhCommentifyUseBlockIndex = 'Yes'˝˝
+let g:EnhCommentifyUseBlockIndex = 'Yes'
 
 " Let scripts autoinstall
 let g:GetLastestVimScripts_allowautoinstall=1

@@ -13,3 +13,16 @@ function railsapp {
 
 # misc
 alias reload='. ~/.bash_profile'
+
+# force colors on ls
+if [[ $OSTYPE == 'linux-gnu' ]]; then
+  alias ls='ls --color=always -B'
+elif [[ $OSTYPE == 'darwin10.0' ]]; then
+  alias ls='ls -G'
+fi
+
+alias ll='ls -l'
+
+# force colors on grep
+alias grep='grep --color=AUTO'
+alias fgrep='fgrep --color=AUTO'
