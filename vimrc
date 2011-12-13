@@ -4,6 +4,13 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+" Use Pathogen to manage plugins
+filetype off
+call pathogen#runtime_append_all_bundles()
+
+" Set encoding
+set encoding=UTF-8
+
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
