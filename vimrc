@@ -26,6 +26,7 @@ map Q gq
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
   set hlsearch
+  set hl=l:Visual
 endif
 
 " Switch wrap off for everything
@@ -214,7 +215,21 @@ nnoremap <F12> :set invpaste paste?<CR>
 set pastetoggle=<F12>
 set showmode
 
-" Set up toggles 
+" Set up toggle for TagList
+nmap <F10>  :TlistToggle<CR> 
+
+" Set up NerdTree
+nmap <F11>  :NERDTreeToggle<CR>
+let g:NERDSpaceDelims=1
+let g:NERDRemoveExtraSpaces=1
+let g:NERDDefaultNesting=0
+let g:NERDTreeWinPos = 'right'
+
+" Commenting with EnhancedCommentify
+let g:EnhCommentifyRespectIndent = 'Yes'
+let g:EnhCommentifyPretty = 'Yes'
+let g:EngCommentifyMultiPartBlocks = 'Yes'
+let g:EnhCommentifyUseBlockIndex = 'Yes'
 
 " Let scripts autoinstall
 let g:GetLastestVimScripts_allowautoinstall=1
