@@ -84,8 +84,9 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Always display the status line
+" Always display the status line, add git repo info to the statusline
 set laststatus=2
+set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%{fugitive#statusline()}%=%c,%l/%L\ %P
 
 " \ is the leader character
 let mapleader = ","
