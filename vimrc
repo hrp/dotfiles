@@ -206,3 +206,10 @@ function! OpenURL()
 endfunction
 map <Leader>w :call OpenURL()<CR>
 
+" Get the hell out of insert mode with 'kj'
+inoremap kj <Esc>
+
+" Set/unset paste mode with <F12>
+nnoremap <F12> :set invpaste paste?<CR>
+set pastetoggle=<F12>
+set showmode
