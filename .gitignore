@@ -1,2 +1,6 @@
 vim/.netrwhist
 vim/.VimballRecord
+
+# Keep downloaded plugins out
+vim/autoload/*
+vim/bundle/*
