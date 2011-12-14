@@ -18,7 +18,6 @@ git_bundles = %w[
   git://github.com/ervandew/supertab.git
   git://github.com/tsaleh/vim-tcomment.git
   git://github.com/vim-ruby/vim-ruby.git
-  git://repo.or.cz/vcscommand
   git://github.com/hrp/vim_colors.git
   git://github.com/hrp/rainbow-parenthesis.git
   git://github.com/mileszs/ack.vim.git
