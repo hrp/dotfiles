@@ -20,7 +20,6 @@ git_bundles = %w[
   git://github.com/tsaleh/vim-tcomment.git
   git://github.com/vim-ruby/vim-ruby.git
   git://github.com/hrp/vim_colors.git
-  git://github.com/hrp/rainbow-parenthesis.git
   git://github.com/mileszs/ack.vim.git
   git://github.com/wincent/Command-T.git
   git://github.com/vim-scripts/timestamp.vim.git
