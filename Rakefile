@@ -1,6 +1,11 @@
 require 'rake'
 require 'erb'
 
+desc "redownload all vim plugins"
+task :vim_update do
+  puts "to do"
+end
+
 desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
