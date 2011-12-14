@@ -36,8 +36,11 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   set hl=l:Visual
 endif
 
-" Switch wrap off for everything
-set nowrap
+" Switch wrap on for everything
+set wrap
+
+" Add mouse support
+:set mouse=a
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
