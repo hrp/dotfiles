@@ -13,6 +13,7 @@ git_bundles = %w[
   git://github.com/tpope/vim-repeat.git
   git://github.com/tpope/vim-surround.git
   git://github.com/tpope/vim-vividchalk.git
+  git://github.com/borgand/ir_black.git
   git://github.com/tsaleh/vim-align.git
   git://github.com/tsaleh/vim-shoulda.git
   git://github.com/ervandew/supertab.git
@@ -22,9 +23,7 @@ git_bundles = %w[
   git://github.com/hrp/rainbow-parenthesis.git
   git://github.com/mileszs/ack.vim.git
   git://github.com/wincent/Command-T.git
-  git://github.com/borgand/ir_black.git
   git://github.com/vim-scripts/timestamp.vim.git
-  git://github.com/hrp/EnhancedCommentify.git
   git://github.com/chrismetcalf/vim-autocomplpop.git
   git://github.com/tpope/vim-rails.git
   git://github.com/tpope/vim-fugitive.git

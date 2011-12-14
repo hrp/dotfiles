@@ -233,11 +233,5 @@ let g:NERDRemoveExtraSpaces=1
 let g:NERDDefaultNesting=0
 let g:NERDTreeWinPos = 'right'
 
-" Commenting with EnhancedCommentify
-let g:EnhCommentifyRespectIndent = 'Yes'
-let g:EnhCommentifyPretty = 'Yes'
-let g:EngCommentifyMultiPartBlocks = 'Yes'
-let g:EnhCommentifyUseBlockIndex = 'Yes'
-
 " Let scripts autoinstall
 let g:GetLastestVimScripts_allowautoinstall=1
