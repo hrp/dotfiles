@@ -104,7 +104,7 @@ map <Leader>R :e doc/README_FOR_APP<CR>
 
 " Leader shortcuts for Rails commands
 map <Leader>m :Rmodel 
-" map <Leader>c :Rcontroller 
+map <Leader>c :Rcontroller 
 map <Leader>v :Rview 
 map <Leader>u :Runittest 
 map <Leader>f :Rfunctionaltest 
