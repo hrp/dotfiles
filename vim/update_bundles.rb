@@ -89,4 +89,4 @@ FileUtils.cd("Command-T")
 `rvm use system; rake make`
 
 # Regenerate the helpfiles
-`/usr/bin/vim -e -c "call pathogen#helptags()" -c q`
+`/usr/local/bin/vim -e -c "call pathogen#helptags()" -c q`
