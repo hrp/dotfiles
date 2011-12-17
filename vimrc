@@ -4,9 +4,44 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Use Pathogen to manage plugins
+" Use Vundle to manage plugins
 filetype off
-call pathogen#runtime_append_all_bundles()
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
+
+" Bundles
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'tsaleh/vim-align'
+Bundle 'tsaleh/vim-tcomment'
+Bundle 'chrismetcalf/vim-autocomplpop'
+Bundle 'ervandew/supertab'
+Bundle 'scrooloose/syntastic'
+Bundle 'IndexedSearch'
+
+" Integrations
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'wincent/Command-T'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-fugitive'
+Bundle 'nathanaelkane/vim-indent-guides'
+
+" Syntax
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tsaleh/vim-shoulda'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-markdown'
+
+" Color schemes
+Bundle 'ChrisKempson/Vim-Tomorrow-Theme'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'borgand/ir_black'
+Bundle 'hrp/vim_colors'
+
 
 " Set encoding
 set encoding=UTF-8
@@ -180,7 +215,7 @@ endif
 " Color scheme
 let g:solarized_termcolors=256
 set background=dark
-colorscheme wombat256
+colorscheme Tomorrow-Night
 set t_Co=256
 highlight NonText guibg=#060606
 highlight Folded  guibg=#0A0A0A guifg=#9090D0
