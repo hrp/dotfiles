@@ -15,11 +15,14 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-align'
-Bundle 'tsaleh/vim-tcomment'
+" Bundle 'tsaleh/vim-tcomment'
 Bundle 'chrismetcalf/vim-autocomplpop'
+" Bundle 'Shougo/neocomplcache'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'IndexedSearch'
+Bundle 'dickeytk/status.vim'
+Bundle 'scrooloose/nerdcommenter'
 
 " Integrations
 Bundle 'mileszs/ack.vim'
@@ -36,7 +39,8 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 
 " Color schemes
-Bundle 'ChrisKempson/Vim-Tomorrow-Theme'
+Bundle 'Rykka/ColorV'
+Bundle 'railsbros-dirk/Vim-Tomorrow-Theme'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'borgand/ir_black'
@@ -133,7 +137,10 @@ set expandtab
 
 " Always display the status line, add git repo info to the statusline
 set laststatus=2
-set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%{fugitive#statusline()}%=%c,%l/%L\ %P
+" set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%{fugitive#statusline()}%=%c,%l/%L\\ %P
+" Woo statusline.vim
+let g:statusline_fugitive = 1
+let g:statusline_syntastic = 1
 
 " \ is the leader character
 let mapleader = ","
@@ -191,7 +198,7 @@ nmap <F1> <Esc>
 imap <C-F> <C-R>=expand("%")<CR>
 
 " Maps autocomplete to tab
-imap <Tab> <C-N>
+" imap <Tab> <C-N>
 
 imap <C-L> <Space>=><Space>
 
