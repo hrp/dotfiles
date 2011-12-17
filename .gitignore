@@ -4,3 +4,4 @@ vim/.VimballRecord
 # Keep downloaded plugins out
 vim/autoload/*
 vim/bundle/*
+!vim/bundle/vundle
