@@ -1,16 +1,3 @@
-function prompt
-{
-local WHITE="\{\033[1;37m\}"
-local GRAY="\{\033[0;37m\}"
-local GREEN="\{\033[0;32m\}"
-local CYAN="\{\033[0;36m\}"
-
-export PS1="
-${GRAY}\$(git_info_for_prompt) ${CYAN}\w${GREEN} $ ${WHITE}"
-}
-
-prompt
-
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export PS1='%m:%3~$(git_info_for_prompt)%# '
 # else

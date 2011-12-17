@@ -15,6 +15,7 @@ git_bundles = %w[
   git://github.com/tpope/vim-vividchalk.git
   git://github.com/borgand/ir_black.git
   git://github.com/tsaleh/vim-align.git
+  git://github.com/altercation/vim-colors-solarized.git
   git://github.com/tsaleh/vim-shoulda.git
   git://github.com/ervandew/supertab.git
   git://github.com/tsaleh/vim-tcomment.git

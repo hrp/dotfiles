@@ -82,13 +82,14 @@ else
 
 endif " has("autocmd")
 
-" if has("folding")
-  " set foldenable
-  " set foldmethod=syntax
-  " set foldlevel=1
-  " set foldnestmax=2
-  " set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
-" endif
+" Enable folds based on syntax
+if has("folding")
+  set nofoldenable
+  set foldmethod=syntax
+  set foldlevel=1
+  set foldnestmax=2
+  set foldtext=strpart(getline(v:foldstart),0,50).'\ ...\ '.substitute(getline(v:foldend),'^[\ #]*','','g').'\ '
+endif
 
 " Softtabs, 2 spaces
 set tabstop=2
@@ -177,10 +178,20 @@ if executable("ack")
 endif
 
 " Color scheme
-colorscheme jellybeans
+let g:solarized_termcolors=256
+set background=dark
+colorscheme wombat256
 set t_Co=256
-" highlight NonText guibg=#060606
-" highlight Folded  guibg=#0A0A0A guifg=#9090D0
+highlight NonText guibg=#060606
+highlight Folded  guibg=#0A0A0A guifg=#9090D0
+
+" Line and column highlighting
+set cursorline "cursorcolumn
+
+"Turn cursor column on for haml and sass
+autocmd BufEnter *.haml setlocal cursorcolumn
+autocmd BufEnter *.sass setlocal cursorcolumn
+autocmd BufEnter *.scss setlocal cursorcolumn 
 
 " Numbers
 set number
