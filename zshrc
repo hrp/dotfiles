@@ -37,5 +37,42 @@ source $ZSH/oh-my-zsh.sh
 # use .localrc for settings specific to one system
 # [[ -f ~/.localrc ]] && . ~/.localrc
 
+# Automagical Bundle Exec
+# From https://gist.github.com/1316656
+
+BUNDLED_COMMANDS=(rails rake rspec ruby sass sass-convert spec spork)
+# BUNDLED_COMMANDS=()
+
+is-bundler-installed()
+{
+  which bundle > /dev/null 2>&1
+}
+
+is-within-bundled-project()
+{
+  local dir="$(pwd)"
+  while [ "$(dirname $dir)" != "/" ]; do
+    [ -f "$dir/Gemfile" ] && return
+    dir="$(dirname $dir)"
+  done
+  false
+}
+
+run-with-bundler()
+{
+  if is-bundler-installed && is-within-bundled-project; then
+    print "$fg[yellow]Using bundle exec...$reset_color"
+    bundle exec $@
+  else
+    $@
+  fi
+}
+
+for CMD in $BUNDLED_COMMANDS; do
+  alias $CMD="run-with-bundler $CMD"
+done
+
+
+
 # RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
