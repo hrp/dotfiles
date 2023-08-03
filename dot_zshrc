@@ -1,10 +1,12 @@
 source ~/.aliases
 
 # chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
+# source /usr/local/opt/chruby/share/chruby/chruby.sh
+# source /usr/local/opt/chruby/share/chruby/auto.sh
 
 source ~/.zsh/zsh-z.plugin.zsh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # TERMINAL PROMPT
 precmd() { print "" }
