@@ -1,0 +1,7 @@
+# NAVIGATION
+alias ..="cd .."
+alias ls="ls -hG"
+alias ll="ls -l"
+alias grep="grep --color"
+
+alias git_branches_deleted_on_remote="git branch --v | grep '\[gone\]' | awk '{print $1}'"

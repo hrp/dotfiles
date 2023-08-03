@@ -1,0 +1,26 @@
+source ~/.aliases
+
+# chruby
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+
+source ~/.zsh/zsh-z.plugin.zsh
+
+# TERMINAL PROMPT
+precmd() { print "" }
+NEWLINE=$'\n'
+PS1="%F{11}%D{%a %b %d %H:%M:%S} %F{13}%n %F{10}%1~"
+
+# Git support in prompt
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+PS1+=\$vcs_info_msg_0_
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:git:*' formats ' %F{240}(%b)'
+
+PS1+="${NEWLINE}"
+PS1+="%F{12}$%f "
+
+autoload -Uz compinit && compinit
