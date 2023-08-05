@@ -1,3 +1,1 @@
-# source /usr/local/opt/chruby/share/chruby/chruby.sh
-# source /usr/local/opt/chruby/share/chruby/auto.sh
-# chruby_auto
+eval "$(/opt/homebrew/bin/brew shellenv)"

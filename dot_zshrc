@@ -1,12 +1,11 @@
 source ~/.aliases
 
-# chruby
-# source /usr/local/opt/chruby/share/chruby/chruby.sh
-# source /usr/local/opt/chruby/share/chruby/auto.sh
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-source ~/.zsh/zsh-z.plugin.zsh
+export PATH="$HOME/.bin:$PATH"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # TERMINAL PROMPT
 precmd() { print "" }
