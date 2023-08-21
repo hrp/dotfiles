@@ -25,3 +25,9 @@ PS1+="${NEWLINE}"
 PS1+="%F{12}$%f "
 
 autoload -Uz compinit && compinit
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(zoxide init zsh)"
+
+source /opt/homebrew/opt/git-extras/share/git-extras/git-extras-completion.zsh
+
